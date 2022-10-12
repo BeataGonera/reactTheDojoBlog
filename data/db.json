@@ -1,0 +1,19 @@
+{
+    "blogs": [
+        {
+        "title": "My website1",
+        "body": "This is my blog. Text is fetched from JSON server",
+        "author": "Beata",
+        "id": 1
+        },
+
+        {
+        "title": "My website2",
+        "body": "lorem ipsum...",
+        "author": "luigi",
+        "id": 2
+        }
+    ]
+}
+
+  
