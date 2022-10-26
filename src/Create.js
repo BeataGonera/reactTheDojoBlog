@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useHistory } from 'react-router-dom';
 
 export const Create = () => {
 
@@ -6,6 +7,8 @@ export const Create = () => {
     const [body, setBody] = useState()
     const [author, setAuthor] = useState('mario')
     const [isLoading, setIsLoading] = useState(false)
+
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,7 +22,8 @@ export const Create = () => {
             body: JSON.stringify(blog)
         }
          ).then(console.log("New blog added"),
-                setIsLoading(false))
+                setIsLoading(false), 
+                history.push('/'))
     }
 
     return ( 
