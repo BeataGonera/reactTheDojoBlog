@@ -6,6 +6,7 @@ const BlogList = ({ blogs, title }) => {
     // const title = props.title // to to samo
 
 
+
     return ( 
         <div className="blog-list">
             <h2>{title}</h2>
